@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=DM+Serif+Display&family=DM+Serif+Text&family=Dongle:wght@300&family=Fredericka+the+Great&family=Koulen&family=Patua+One&family=Poppins:wght@100&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/b6e1e126bc19c3e9fe26136203746a13?family=Kefa+PressS);
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Koulen';
+    letter-spacing: 0.15em;
+}
+
+ul {
+    font-family: 'Kefa';
+    color: #FFFFFF;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {width: 100%;}
+
+.nav-container {
+    background: #283248;
+    
+    a {
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    
+    .logo {
+        color: #F1A598;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+        
+    ul {
+        display: flex;
+            
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+
+.social-header, .hero-design {
+    display: none;
+}
+
+.hero {
+    background: #385080;
+    color: #F2F0B9;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+    font-size: 25px;
+}
+
+.scroll {
+    width: 30px;
+    margin-top: 2em;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #E0EBFD;
+    z-index: -1;
+}
+
+.about {
+    position: relative;
+}
+.about::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #F2F0B9;
+    top: 0;
+    left: 0;
+    opacity: 60%;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #385080;
+    letter-spacing: .2em;
+    font-size: 2em;
+}
+
+.fearured-desc {
+    color: #F1A598;
+    font-family: Kefa;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+
+.subtitle-a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8018A7;
+    letter-spacing: .2em;
+    font-size: 2em;
+}
+
+.fearured-desc1 {
+    color: black;
+    font-family: Kefa;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+
+
+.skill {
+    position: relative;
+}
+.skill::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 1440px;
+     height: 300px;
+     background: #A8D2D2;
+     transform: translate(0px,-300px);
+     z-index: -1;
+     opacity: 50%;
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+    
+    .nav-container {
+        display :grid;
+        grid-template-columns: 66% auto;
+        background: #E0EBFD;
+    }
+    
+    header {
+        background: #283248;
+    }
+    
+    header {
+        padding: 2em 2em 2em 4em;
+    }
+    .social-header {
+        padding: 2em 4em 2em 0;
+    }
+    section {
+        padding: 4em;
+    }
+    
+    .social-header {
+        display: block;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+            
+            img {
+                width: 20px;
+            }
+        }
+    }
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: #E0EBFD;
+        padding: 0;
+        
+        .content {
+            background: #385080;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+            
+            h1 {
+                font-size: 3.5em;
+                justify-content: space-around;
+                line-height: 1.2em;
+            }
+        }
+    }
+    
+    .hero-design {
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .about::before {
+        transform: translate(0px, 100px);
+    }
+    .subtitle, .fearured-desc,{
+        text-align: left;
+        transform: translate(-120px, -60px);
+    }
+    .subtitle-a, .fearured-desc1 {
+        text-align: left;
+        transform: translate(400px,-200px);
+    }
+    .tex {
+        text-align: left;
+        transform: translate(-120px, -60px);
+    }
+    .box1 {
+        position: relative;
+        left: 0;
+        top:0;
+        z-index: -1;
+        transform: translate(-180px,-350px);
+    }
+    .box2 {
+        position: relative;
+        left: 0;
+        top:0;
+        z-index: -1;
+        transform: translate(220px,-400px);
+    }
+    
+}
+
+@media only screen and (min-width: 1250px) {
+    header {
+        padding: 2em 2em 2em 10em;
+    }
+    .social-header {
+        padding: 2em 9em 2em 0;
+    }
+    section {
+        padding: 15em 15em 6em 15em;
+    }
+    .hero .content {
+        padding: 2em 10em 0em 10em;
+    }
+    .about {
+        position: relative;
+    }
+    .about::before {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        vertical-align: bottom;
+        bottom: 10;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    header {
+        padding: 2em 2em 2em 20em;
+    }
+    .social-header {
+        padding: 2em 18em 2em 0;
+    }
+    section {
+        padding: 2em 10em 0em 10em;
+    }
+    .hero .content {
+        padding: 6em 8em 6em 20em;
+    }
+}
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(259px, 766px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(259px, 785px);
+    }
+}
+
+.blog {
+    color: #0F2D8E;
+    letter-spacing: 1em;
+}
+
+.blo {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4em;
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    transform: translate(-100px, -800px);
+}
+
+
+.subtitle1 {
+    font-size: 35px;
+    transform: translate(0px, -500px);
+}
+
+.subtitle2 {
+    font-size: 35px;
+    transform: translate(0px, -400px);
+}
+
+.subtitle3 {
+    font-size: 35px;
+    transform: translate(0px, -300px);
+}
+
+.subtitle4 {
+    font-size: 35px;
+    transform: translate(0px, -200px);   
+}
+
+.sub {
+    font-size: 35px;
+    transform: translate(-100px, -500px);   
+}
+
+
+
+.bot {
+    display: unset;
+    bottom: 0;
+        margin-left: -50%;
+        margin-bottom: 15%;
+        width: 20%;
+    height: 30%;
+}
